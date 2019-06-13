@@ -32,9 +32,9 @@ export class HeroesComponent implements OnInit {
     this.heroService.addHero({name} as Hero)
     .subscribe(hero => {
       this.heroes.push(hero);
-    })
-    }
-  }
+    });
+   }
+  
 
   onSelect(hero: Hero) {
     this.selectedHero = hero;
